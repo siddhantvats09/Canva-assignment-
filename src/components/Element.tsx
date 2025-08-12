@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { ElementType } from '../types';
+import { ElementType } from '.././types';
 
 interface ElementProps {
   element: ElementType;
