@@ -3,6 +3,7 @@ import Canvas from "./components/Canvas";
 import Toolbar from "./components/Toolbar";
 import useCanvasActions from "./hooks/useCanvasActions";
 import "./App.css";
+import Heading from "./components/Heading";
 
 const App: React.FC = () => {
   const { addElement, removeElement, undo, redo, elements, setElements } =
@@ -96,6 +97,7 @@ const App: React.FC = () => {
 
   return (
     <div className="app">
+      <Heading></Heading>
       <Toolbar
         onAddImage={onAddImage}
         onAddText={onAddText}
@@ -120,3 +122,15 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+

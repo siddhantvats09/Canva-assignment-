@@ -460,7 +460,7 @@ const Canvas: React.FC<CanvasProps> = ({
           />
         ))}
       <button
-        style={{ margin: "10px 0" }}
+        style={{ margin: "10px 0"}}
         onClick={() => {
           const canvas = canvasRef.current;
           if (!canvas) return;

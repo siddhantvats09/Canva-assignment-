@@ -69,3 +69,9 @@ body {
     width: 100%;
   }
 }
+
+.heading{
+  font-size: 24px;
+  font-weight: bold;
+  font: 26px;
+}
