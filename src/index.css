@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #8a0f0f;
+}
+
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  align-items: center;
+  background-color: #031b2cc3;
+}
+
+.toolbar input[type="file"],
+.toolbar input[type="text"],
+.toolbar select,
+.toolbar button {
+  font-size: 14px;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background: white;
+}
+
+.toolbar input[type="file"] {
+  max-width: 140px;
+}
+
+.toolbar input[type="text"] {
+  min-width: 120px;
+}
+
+.toolbar select {
+  background-color: #fff;
+  min-width: 150px;
+}
+
+.toolbar button {
+  cursor: pointer;
+  background: #0078d7;
+  color: white;
+  border: none;
+  transition: background 0.2s;
+}
+
+.toolbar button:hover {
+  background: #005fa3;
+}
+
+.toolbar button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .toolbar input,
+  .toolbar select,
+  .toolbar button {
+    width: 100%;
+  }
+}
